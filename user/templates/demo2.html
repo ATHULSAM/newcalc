@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="{% static 'ab.js'%}"></script> -->
+</head>
+<body>
+    <!-- <p id="p1">TEST</p> -->
+    <input type="number" placeholder="enter number one" id="n1">
+    <input type="number" placeholder="enter number two" id="n2">
+    <input type="number" placeholder="enter number three" id="n3">
+    <label id="l1"></label>
+    <button onmouseover="testfun()">click</button>
+    <script>
+        // document.write("Hiii")
+        // console.log('test')
+        // window.alert('hiiiii')
+        // document.getElementById('p1').innerHTML = "changed"
+        // document.getElementById('p1').align = "center"
+        // document.getElementById('p1').style.color = "red"
+           function testfun(){
+               x = Number(document.getElementById('n1').value)
+               y = Number(document.getElementById('n2').value)
+               z = Number(document.getElementById('n3').value)
+              alert(avg = (x + y + z)/3) 
+               document.getElementById('l1').innerHTML = avg
+
+           } 
+    </script>
+</body>
+</html>

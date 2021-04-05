@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="enter a number" id="n1">
+    <input type="number" placeholder="enter the limit" id="n2">
+    <button onclick="mulfun()">ENTER</button>
+    <script>
+        function mulfun(){
+            m1 = Number(document.getElementById('n1').value)
+            m2 = Number(document.getElementById('n2').value)
+            i=1
+             
+             while(i<=m2){
+                a = m1 * i 
+                
+                 document.write(m1 + '*'+i+'='+a +"<br>")
+
+                 i++
+             }
+        
+        }
+    </script>
+</body>
+</html>

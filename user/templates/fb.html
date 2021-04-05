@@ -1,0 +1,140 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>facebook</title>
+    <style>
+        .bg {
+            background-color: #3b5998;
+            height: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg">
+            <div class="col-lg-6"> <img src="{% static 'fb.png' %}" width="40%" alt="">
+            </div>
+            <div class="col-lg-6" style="padding: 25px;">
+                <form class="row row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12">
+                        <label for="inlineFormInputGroupUsername">Email or phone</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Email or phone">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="inlineFormInputGroupUsername">Username</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                        </div>
+                    </div>
+
+                    <div class="col-12" style="padding-top: 25px;">
+                        <button type="Log in" class="btn btn-primary p" style="background-color: #3b5998;">Log in</button></div>
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8" style="height: 600px; background-color:#edf0f5">
+            <h4 style="background-color: #edf0f5; padding: 30px;padding-left: 130px;">facebook helps you to connect with the<br>people in your life<br></h4>
+            <img src="{% static 'oldfb.png' %}" style="padding-left: 130px;" alt="error image not found">
+        </div>
+        <div class="col-lg-4" style="height: 600px; background-color: #edf0f5;">
+        <h1 style="font-weight: bolder;">Create an account</h1>
+        <h4>It's free and always will be</h4>
+        <form>
+            <div class="row">
+            <div class="col">    
+               
+               <input type="text" class="form-control" placeholder="first name">
+             </div>
+             <div class="col" style="padding-right: 30px;">
+               
+                <input type="text" class="form-control" placeholder="Last name">
+            </div>
+            </div>
+            <div class="row">
+                <div class="form" style="padding-top: 15px;padding-right: 30px;">
+                  
+                    <input type="text" class="form-control" placeholder="Email or mobile number">
+                </div>
+            </div>
+            <div class="row">
+              <div class="form" style="padding-top: 15px; padding-right: 30px;">
+                  
+                  <input type="password" class="form-control" placeholder="New password">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form" style="padding-top: 15px;padding-right: 30px;">
+                
+                <input type="password" class="form-control" placeholder="Re-enter password">
+                
+            </div>
+            </div>
+           <div class="form-group" style="padding-top: 15px;padding-right: 250px;">
+            <h6>Birthday</h6>
+            <select id="day" name="dd" style="width: 70px;">
+                <option value="dd">day</option>
+                <option value="dd">1</option>
+                <option value="dd">2</option>
+                <option value="dd">3</option>
+                <option value="dd">4</option>
+            </select>
+            <select id="month" name="mm" style="width: 70px;">
+                <option value="mm">month</option>
+                <option value="mm">jan</option>
+                <option value="mm">feb</option>
+                <option value="mm">march</option>
+                <option value="mm">april</option>
+
+            </select>
+            <select id="year" name="yyyy" style="width: 70px;">
+                <option value="year">year</option>
+                <option value="year">2000</option>
+                <option value="year">2001</option>
+                <option value="year">2002</option>
+                <option value="year">2003</option>
+            </select>
+            
+    
+        </div>
+        <div class="form-group" style="padding-top: 15px;">
+            <input type="radio" name="radio">female <input type="radio" name="radio">male
+        </div>
+        <div style="padding-top: 15px;">
+            <button type="submit" style="background-color: green;color: white;width: 150px;">create an account</button>
+        </div>
+        <div style="padding-top: 15px;">
+            <a href="">create a page</a>
+            <p>for a celebrity,brand or bussiness</p>
+        </div>
+              </div>
+        </form>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
